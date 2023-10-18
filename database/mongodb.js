@@ -4,9 +4,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export default function connectMongoDb() {
-    mongoose.connect(process.env.MONGO_CONNECTION_STRING)
-    .then(() => {
-        logger.info("DB CONNECTED");
+    mongoose.connect(process.env.MONGO_CONNECTION_STRING, )
+    .then((data) => {
+        logger.info(`DB CONNECTED - ${data}`);
     })
     .catch((err) => {
         logger.error("Error has occured")

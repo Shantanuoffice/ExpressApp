@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import connectMongoDb from "./database/mongodb.js";
 dotenv.config();
 
-// connectMongoDb();
+connectMongoDb();
 
 app.listen(process.env.PORT, () => {
     console.log(`App running on PORT ${process.env.PORT}`);
