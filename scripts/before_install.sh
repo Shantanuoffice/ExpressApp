@@ -7,7 +7,7 @@ nvm install node
 npm i -g yarn
 
 #create our working directory if it doesnt exist
-DIR="/home/ec2-user/express-app"
+DIR="/var/www/html/express-app"
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
 else
